@@ -1,0 +1,36 @@
+<mat-toolbar color="primary" class="toolbar">
+  <span class="left-align">Mantenendor de usuarios</span>  
+</mat-toolbar>
+
+<div class="background-shapes">
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
+  <div class="shape shape4"></div>
+  <div class="shape shape5"></div>
+</div>
+
+<div class="detail-container">
+  <mat-card class="detail-card">
+    <div *ngIf="loading" class="spinner-container">
+      <mat-spinner></mat-spinner>
+    </div>
+    <div *ngIf="!loading">
+      <h2 class="table-title">Detalle del Usuario</h2>
+      
+      <hr class="divider">
+
+      <mat-card-content>
+        <p><strong>Nombre:</strong> {{ post?.name }}</p>
+        <p><strong>Correo:</strong> {{ post?.email }}</p>
+        <p><strong>Apellido:</strong> {{ post?.username }}</p>
+        <p><strong>Teléfono:</strong> {{ post?.phone }}</p>
+        <p><strong>Empresa:</strong> {{ post?.company?.name }}</p>
+      </mat-card-content>
+      
+      <mat-card-actions>
+        <button class="mt-5" mat-button color="primary" (click)="goBackToList()">Volver a la Lista</button>
+      </mat-card-actions>
+    </div>
+  </mat-card>
+</div>

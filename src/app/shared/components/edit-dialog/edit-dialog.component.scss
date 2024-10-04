@@ -1,0 +1,50 @@
+mat-dialog-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 30px !important;
+    border: 2px solid #ddd;
+    background-color: #f9f9f9;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    background-color: #f3f3f3;
+    border-radius: 4px;
+  }
+  
+  
+  mat-dialog-actions {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px 10px 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  
+  button[mat-button] {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  button[mat-button][color="primary"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
